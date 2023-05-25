@@ -11,10 +11,11 @@ export class UsersService {
          const user = this.repo.create({email,password});
          return this.repo.save(user);
     }
-    find(email:string){
+    async find(email:string){
         if(!email)
             throw new BadRequestException('Please provide email.');
-        return this.repo.find({where:{email:email}});
+        const user = await this.repo.find({where:{email:email}});
+        return user;
     }
     findOne(id:number){
         return this.repo.findOneBy({id});
