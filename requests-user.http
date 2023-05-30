@@ -1,0 +1,30 @@
+###Hello world
+GET http://localhost:3000/
+
+
+###Currently signedin user
+GET  http://localhost:3000/auth/whoami
+
+
+### signin
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email":"adm@abc.com",
+    "password":"abc123"
+}
+
+
+###Signup
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email":"adm@abc.com",
+    "password":"abc123"
+}
+
+
+### Signout
+POST http://localhost:3000/auth/signout

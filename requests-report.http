@@ -1,0 +1,25 @@
+###Hello world
+GET http://localhost:3000/
+
+
+### post report
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+  "make": "toyota",
+  "model": "corolla",
+  "year": 1980,
+  "mileage": 15,
+  "lng": 0,
+  "lat": 0,
+  "price": 500000
+}
+
+### approve report
+PATCH http://localhost:3000/reports/4
+content-type: application/json
+
+{
+  "approved":true
+}
