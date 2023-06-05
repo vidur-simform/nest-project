@@ -8,10 +8,11 @@ import { Serialize } from '../interceptors/serialize.interceptor';
 import { CurrentUser } from './decorators/current-user.decorator';
 import { User } from './entities/user.entity';
 import { AuthGuard } from '../guards/auth.guard';
+import {  ApiTags } from '@nestjs/swagger';
 
 @Controller('auth')
 @Serialize(UserDto)
-
+@ApiTags("User")
 export class UsersController {
   constructor(private readonly usersService: UsersService,private readonly authService: AuthService) {}
  

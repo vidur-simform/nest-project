@@ -6,7 +6,7 @@ import { UsersModule } from './users/users.module';
 import { User } from "./users/entities/user.entity"
 import { ReportsModule } from './reports/reports.module';
 import { Report } from './reports/entities/report.entity';
-import { ConfigModule, ConfigService } from "@nestjs/config"
+import { ConfigModule, ConfigService } from "@nestjs/config";
 @Module({
   imports: [
     ConfigModule.forRoot({
