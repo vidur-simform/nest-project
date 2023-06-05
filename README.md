@@ -21,8 +21,10 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 ## Api doumentation by swagger (after starting app on port 3000)
-$ http://localhost:3000/api
 
+```bash
+$ http://localhost:3000/api
+```
 ## Test
 
 ```bash
